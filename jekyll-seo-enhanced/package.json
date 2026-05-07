@@ -1,0 +1,43 @@
+{
+  "name": "jekyll-seo-enhanced",
+  "version": "1.0.0",
+  "description": "A CLI tool to enhance SEO for Jekyll blogs by generating optimized front matter and suggesting improvements.",
+  "main": "index.js",
+  "bin": {
+    "jekyll-seo": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brucestudios/jekyll-seo-enhanced.git"
+  },
+  "keywords": [
+    "jekyll",
+    "seo",
+    "cli",
+    "blog",
+    "static-site",
+    "markdown"
+  ],
+  "author": "Bruce Fang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brucestudios/jekyll-seo-enhanced/issues"
+  },
+  "homepage": "https://github.com/brucestudios/jekyll-seo-enhanced#readme",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "commander": "^10.0.1",
+    "inquirer": "^9.3.8",
+    "slugify": "^1.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

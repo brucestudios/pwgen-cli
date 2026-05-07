@@ -1,0 +1,61 @@
+#!/bin/bash
+# OpenClaw Status Utility
+# Provides a quick overview of OpenClaw system status
+
+set -euo pipefail
+
+echo "🔍 OpenClaw System Status"
+echo "========================"
+
+# Check if we're in an OpenClaw workspace
+if [[ -f "../AGENTS.md" || -f "../SOUL.md" || -f "../IDENTITY.md" ]]; then
+    echo "✅ OpenClaw workspace detected"
+else
+    echo "⚠️  Not in an OpenClaw workspace"
+fi
+
+# Check gateway status
+if command -v openclaw &> /dev/null; then
+    echo ""
+    echo "🚪 Gateway Status:"
+    openclaw gateway status 2>/dev/null || echo "   Unable to get gateway status"
+else
+    echo ""
+    echo "⚠️  OpenClaw CLI not found in PATH"
+fi
+
+# Check current directory git status
+if git rev-parse --git-dir > /dev/null 2>&1; then
+    echo ""
+    echo "📁 Git Repository Status:"
+    git status --porcelain | head -5
+    if [[ $(git status --porcelain | wc -l) -gt 0 ]]; then
+        echo "   $(git status --porcelain | wc -l) uncommitted changes"
+    else
+        echo "   Working tree clean"
+    fi
+else
+    echo ""
+    echo "📁 Not a git repository"
+fi
+
+# Check Node.js version
+if command -v node &> /dev/null; then
+    echo ""
+    echo "🟢 Node.js: $(node --version)"
+else
+    echo ""
+    echo "🔴 Node.js not found"
+fi
+
+# Check Python version
+if command -v python3 &> /dev/null; then
+    echo ""
+    echo "🐍 Python: $(python3 --version)"
+else
+    echo ""
+    echo "🔴 Python3 not found"
+fi
+
+echo ""
+echo "💡 Tip: Run 'openclaw help' for more commands"

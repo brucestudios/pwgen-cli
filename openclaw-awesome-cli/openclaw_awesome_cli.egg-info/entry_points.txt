@@ -1,0 +1,3 @@
+[console_scripts]
+openclaw-awesome = openclaw_awesome_cli.__main__:main
+

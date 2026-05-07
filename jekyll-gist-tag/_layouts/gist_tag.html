@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+{% if page.gists.size == 0 %}
+  <p>No public gists found for {{ page.username }}.</p>
+{% else %}
+  <ul>
+    {% for gist in page.gists %}
+      <li>
+        <a href="{{ gist.html_url }}">{{ gist.description || gist.id }}</a>
+        ({{ gist.files | size }} file{{ gist.files | size | pluralize: 's' }})
+        {% if gist.created_at %}
+          <small>Created: {{ gist.created_at | date: "%B %d, %Y" }}</small>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

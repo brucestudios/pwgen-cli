@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-01T22:30:11.457Z",
+  "entries": {
+    "memory:memory/2026-04-28.md:1:1": {
+      "key": "memory:memory/2026-04-28.md:1:1",
+      "path": "memory/2026-04-28.md",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "2026-04-28 20:08 UTC: Git clone of https://github.com/brucestudios/brucestudios.github.io.git failed due to network timeout (connection to github.com port 443 timed out). Possibly network issue.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6376939862609188,
+      "maxScore": 0.6376939862609188,
+      "firstRecalledAt": "2026-05-01T22:30:11.457Z",
+      "lastRecalledAt": "2026-05-01T22:30:11.457Z",
+      "queryHashes": [
+        "64b2b6d12bfe"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "network",
+        "github.com",
+        "utc",
+        "git",
+        "clone",
+        "https",
+        "brucestudios",
+        "brucestudios.github.io.git"
+      ]
+    },
+    "memory:memory/2026-05-02.md:1:8": {
+      "key": "memory:memory/2026-05-02.md:1:8",
+      "path": "memory/2026-05-02.md",
+      "startLine": 1,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "2026-05-02 05:38 UTC: Multiple exec failures due to network timeouts when trying to access github.com. Commands failed with SIGKILL or connection timeouts: - amber-sa: signal SIGKILL - swift-sh: signal SIGKILL - tidal-va: signal SIGKILL - nimble-z: signal SIGKILL - tidy-lob: fatal: unable to access 'https://github.com/brucestudios/awesome-weather-cli.git/': Failed to connect to github.com port 443: Connection timed out Network test shows curl to github.com times out after 10 seconds. This appears to be a persistent network connectivity issue preventing access to external repositories.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6331264471637559,
+      "maxScore": 0.6331264471637559,
+      "firstRecalledAt": "2026-05-01T22:30:11.457Z",
+      "lastRecalledAt": "2026-05-01T22:30:11.457Z",
+      "queryHashes": [
+        "64b2b6d12bfe"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "network",
+        "github.com",
+        "amber-sa",
+        "swift-sh",
+        "tidal-va",
+        "nimble-z",
+        "tidy-lob",
+        "utc"
+      ]
+    }
+  }
+}

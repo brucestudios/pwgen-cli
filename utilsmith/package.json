@@ -1,0 +1,38 @@
+{
+  "name": "@brucestudios/uuidsmith",
+  "version": "1.0.0",
+  "description": "A comprehensive UUID/GUID utility toolkit with CLI and programmatic APIs",
+  "main": "src/uuidsmith/index.js",
+  "bin": {
+    "uuidsmith": "./bin/uuidsmith.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "echo 'No build step required'",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "uuid",
+    "guid",
+    "generator",
+    "validator",
+    "cli",
+    "utility"
+  ],
+  "author": "brucestudios",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brucestudios/utilsmith.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brucestudios/utilsmith/issues"
+  },
+  "homepage": "https://github.com/brucestudios/utilsmith#readme",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

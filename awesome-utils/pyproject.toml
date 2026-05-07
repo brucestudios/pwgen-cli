@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awesome-utils"
+version = "1.0.0"
+description = "A collection of useful Python utility functions for common programming tasks"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "brucestudios", email = "bruce@example.com"}
+]
+keywords = ["utilities", "helpers", "string", "file", "validation", "date", "collection"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/brucestudios/awesome-utils"
+Documentation = "https://github.com/brucestudios/awesome-utils#readme"
+Repository = "https://github.com/brucestudios/awesome-utils"
+Issues = "https://github.com/brucestudios/awesome-utils/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tests*", "*.tests*"]
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v"

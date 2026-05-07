@@ -1,0 +1,1 @@
+"""Jekyll Content Optimizer package."""

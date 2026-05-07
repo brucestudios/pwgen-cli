@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "markdown-utils"
+description = "A Python package providing useful Markdown extensions for bloggers and writers."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Bruce Fang", email = "henshao.fang@outlook.com"}
+]
+keywords = ["markdown", "extension", "footnote", "tasklist", "blog", "writing"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Text Processing :: Markup",
+]
+
+[project.urls]
+Homepage = "https://github.com/brucestudios/markdown-utils-library"
+Documentation = "https://github.com/brucestudios/markdown-utils-library#readme"
+Repository = "https://github.com/brucestudios/markdown-utils-library.git"
+
+[project.scripts]
+markdown-utils = "markdown_utils.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

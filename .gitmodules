@@ -1,0 +1,15 @@
+[submodule "my-awesome-repo"]
+	path = my-awesome-repo
+	url = https://github.com/brucestudios/awesome-text-utils.git
+
+[submodule "openclaw-helper"]
+	path = openclaw-helper
+	url = https://github.com/brucestudios/openclaw-helper.git
+
+[submodule "passgen-pro"]
+	path = passgen-pro
+	url = https://github.com/brucestudios/passgen-pro.git
+
+[submodule "pwdgen"]
+	path = pwdgen
+	url = https://github.com/brucestudios/pwdgen.git

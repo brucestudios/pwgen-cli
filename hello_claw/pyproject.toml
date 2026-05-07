@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hello-claw"
+version = "0.1.0"
+description = "A simple Python package to say hello"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+  {name = "Your Name", email = "you@example.com"}
+]
+keywords = ["hello", "example"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/brucestudios/hello-claw"
+
+[project.scripts]
+hello-claw = "hello_claw.__main__:main"
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools.package-data]
+hello_claw = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

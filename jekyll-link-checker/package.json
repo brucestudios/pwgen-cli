@@ -1,0 +1,24 @@
+{
+  "name": "jekyll-link-checker",
+  "version": "1.0.0",
+  "description": "A Node.js utility to check for broken links in Jekyll sites",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jekyll",
+    "link-checker",
+    "website",
+    "broken-links"
+  ],
+  "author": "OpenClaw Assistant",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^5.0.0",
+    "commander": "^11.0.0",
+    "jsdom": "^22.0.0"
+  }
+}

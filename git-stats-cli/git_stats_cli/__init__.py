@@ -1,0 +1,1 @@
+"""Git Stats CLI - A command-line tool for analyzing Git repository statistics."""

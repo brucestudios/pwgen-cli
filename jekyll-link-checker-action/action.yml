@@ -1,0 +1,25 @@
+name: 'Jekyll Link Checker'
+description: 'Check for broken links in a Jekyll site'
+inputs:
+  site-dir:
+    description: 'Directory containing the Jekyll site (default: repository root)'
+    required: false
+    default: '.'
+  exclude:
+    description: 'Comma-separated list of URL patterns to exclude (e.g., "/admin/,https://example.com/*")'
+    required: false
+    default: ''
+  timeout:
+    description: 'Timeout for each link check in milliseconds (default: 30000)'
+    required: false
+    default: '30000'
+  fail-on-error:
+    description: 'Whether to fail the action if broken links are found (default: true)'
+    required: false
+    default: 'true'
+runs:
+  using: 'node16'
+  main: 'index.js'
+branding:
+  icon: 'link'
+  color: 'green'

@@ -1,0 +1,8 @@
+README.md
+openclaw_awesome_cli/__init__.py
+openclaw_awesome_cli/__main__.py
+openclaw_awesome_cli.egg-info/PKG-INFO
+openclaw_awesome_cli.egg-info/SOURCES.txt
+openclaw_awesome_cli.egg-info/dependency_links.txt
+openclaw_awesome_cli.egg-info/entry_points.txt
+openclaw_awesome_cli.egg-info/top_level.txt

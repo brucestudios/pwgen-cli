@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "string-utils"
+version = "0.1.0"
+description = "A collection of text processing utilities for common string manipulation tasks"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Bruce Studios", email = "bruce@example.com"}
+]
+keywords = ["text", "processing", "utilities", "string", "manipulation"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing"
+]
+urls = {
+    "Homepage" = "https://github.com/brucestudios/textutils",
+    "Repository" = "https://github.com/brucestudios/textutils.git",
+    "Bug Tracker" = "https://github.com/brucestudios/textutils/issues",
+}
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/brucestudios/textutils#readme"
+Source = "https://github.com/brucestudios/textutils"
+Tracker = "https://github.com/brucestudios/textutils/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["textutils*"]
+
+[tool.setuptools.package-data]
+textutils = ["py.typed"]
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+
+[tool.isort]
+profile = "black"

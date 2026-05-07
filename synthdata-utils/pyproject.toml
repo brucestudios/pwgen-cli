@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synthdata-utils"
+version = "0.1.0"
+description = "A Python utility library for generating synthetic data"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Bruce Fang", email = "henshao.fang@outlook.com"}
+]
+keywords = ["synthetic", "data", "testing", "faker"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/brucestudios/synthdata-utils"
+
+[tool.setuptools.packages.find]
+where = ["src"]

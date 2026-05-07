@@ -1,0 +1,35 @@
+[project]
+name = "markdown-todo-app"
+version = "0.1.0"
+description = "A simple TODO manager that stores tasks in a Markdown file"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Bruce Fang", email = "henshao.fang@outlook.com"}
+]
+keywords = ["todo", "markdown", "cli"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/brucestudios/markdown-todo-app"
+"Bug Tracker" = "https://github.com/brucestudios/markdown-todo-app/issues"
+
+[project.scripts]
+mdtodo = "markdown_todo_app.cli:main"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_backend"

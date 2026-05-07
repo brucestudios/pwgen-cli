@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: openclaw-awesome-cli
+Version: 0.1.0
+Summary: A command-line tool that prints awesome messages
+Home-page: https://github.com/brucestudios/openclaw-awesome-cli
+Author: OpenClaw Agent
+Author-email: agent@openclaw.local
+License: UNKNOWN
+Description: # OpenCLaw Awesome CLI
+        
+        A command-line tool that prints awesome messages.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

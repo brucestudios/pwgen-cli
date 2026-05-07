@@ -1,0 +1,24 @@
+[package]
+name = "randgen"
+version = "0.1.0"
+edition = "2021"
+description = "A command-line tool for generating random numbers with various distributions"
+repository = "https://github.com/brucestudios/randgen-cli"
+license = "MIT"
+authors = ["brucestudios <brucestudios@example.com>"]
+keywords = ["random", "number", "generator", "cli"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+rand = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+predicates = "3.0"
+assert_cmd = "2.0"
+
+[[bin]]
+name = "randgen"
+path = "src/main.rs"

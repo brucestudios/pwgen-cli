@@ -1,0 +1,35 @@
+{
+  "name": "openclaw-skill-cli",
+  "version": "1.0.0",
+  "description": "A CLI utility to manage OpenClaw skills: list, install, update, and publish skills from ClawHub.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "oc-skill": "./index.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "lint": "eslint .",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brucestudios/openclaw-skill-cli.git"
+  },
+  "keywords": [
+    "openclaw",
+    "skill",
+    "cli",
+    "clawhub"
+  ],
+  "author": "Bruce Fang <henshao.fang@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brucestudios/openclaw-skill-cli/issues"
+  },
+  "homepage": "https://github.com/brucestudios/openclaw-skill-cli#readme",
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "husky": "^9.0.0"
+  }
+}

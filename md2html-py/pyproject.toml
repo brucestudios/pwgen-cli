@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "md2html-py"
+version = "0.1.0"
+description = "A simple Python library to convert Markdown to HTML with optional YAML front matter parsing"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Bruce Fang", email = "henshao.fang@outlook.com"}
+]
+keywords = ["markdown", "html", "yaml", "front-matter", "jekyll"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Text Processing :: Markup :: HTML"
+]
+dependencies = [
+    "markdown>=3.0",
+    "PyYAML>=5.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/brucestudios/md2html-py"
+Repository = "https://github.com/brucestudios/md2html-py"
+Issues = "https://github.com/brucestudios/md2html-py/issues"
+
+[project.scripts]
+md2html = "md2html.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["md2html"]
+include = ["md2html*"]
+
+[tool.setuptools.package-data]
+md2html = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
